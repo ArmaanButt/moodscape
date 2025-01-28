@@ -4,8 +4,8 @@
 
 ## Completed
 
-- Scrapped images from Wikipedia
-- Scrapped metadata table of paintings
+- [x] Scrapped images from Wikipedia
+- [x] Scrapped metadata table of paintings
 
 ## Todo
 
