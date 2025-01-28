@@ -1,11 +1,11 @@
-import { type Config } from "drizzle-kit";
+import { defineConfig } from "drizzle-kit";
 
 
-export default {
-  schema: "./src/drizzle/schema.ts",
+export default defineConfig({
+  schema: "./src/db/schema.ts",
   dialect: "postgresql",
   dbCredentials: {
-    url: env.DATABASE_URL,
+    url: process.env.DATABASE_URL,
   },
-  tablesFilter: ["moodscape-next_*"],
-} satisfies Config;
+  tablesFilter: ["moodscape_*"],
+})
